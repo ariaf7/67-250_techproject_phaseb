@@ -10,6 +10,12 @@
 
   }
 
+  form * {
+    margin: auto;
+    text-align: center;
+  }
+  
+
     #logo {
         width: 20%;
         display: block;
@@ -41,6 +47,18 @@
         text-align: center;
         color: rgba(32,99,155,.72);
         }
+
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: fit-content;
+        }
+        
+        tr:nth-child(even) {
+        background-color: #20639b;
+        }
+          
       
       
   
