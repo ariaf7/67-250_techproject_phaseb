@@ -1,30 +1,50 @@
 * {
-    padding: 5px;
-    margin: 5px;
-    background: #fbe4ed;
+    
     color:  #030336;
-    font-family: Roboto Serif, Helvetica, Arial, sans-serif;
+    font-family: Roboto Serif, Comfortaa, Arial, sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     line-height: 1.5;
 
   }
 
-  form * {
-    margin: auto;
+  body {
+    margin: 100px;
+    padding: 0;
+    background: #fbe4ed;
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     text-align: center;
   }
   
 
     #logo {
-        width: 20%;
+        margin-top: 0px;
+        width: 30%;
         display: block;
     }
+
+    #exploreImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+
+    #h3 {
+        display: block;
+        margin: auto;
+    }  
 
   nav a {
     text-decoration: none;
     color: #20639b;
     font-weight: 400;
+    font-family: Comfortaa;
     padding: 8px 10px;
     border: 1px solid transparent;
     border-radius: 12px;
@@ -40,13 +60,21 @@
     #cta {
         font-weight: bold; 
     }  
+
+    #submit{
+        font-weight: bold; 
+        background-color:#AA336A;  
+        border-radius: 100px;
+        border-style:ridge ;
+        border-color: #fbe4ed;
+    }
     
     footer {
         border-top: 1px solid rgba(32,99,155,.12);
         padding: 18px 16px;
         text-align: center;
         color: rgba(32,99,155,.72);
-        }
+      }
 
 
     th {
@@ -56,7 +84,7 @@
         }
         
         tr:nth-child(even) {
-        background-color: #20639b;
+        background-color: #feeef8;
         }
           
       
