@@ -1,0 +1,39 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    background: #fbe4ed;
+    color:  #030336;
+    font-family: Roboto Serif, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+
+  }
+
+    #logo {
+        width: 20%;
+        display: block;
+    }
+
+  nav a {
+    text-decoration: none;
+    color: #20639b;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+  
+  nav a:hover {
+    border-color: #AA336A;
+    }
+
+    #navselected {
+        color:#AA336A;    
+        }
+    #cta {
+        font-weight: bold; 
+    }    
+      
+  
+  
