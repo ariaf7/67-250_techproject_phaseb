@@ -33,8 +33,29 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
       }
 
+    #codeImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+    }  
+
+    #algoImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
     #h3 {
         display: block;
         margin: auto;
@@ -64,7 +85,17 @@
     #submit{
         font-weight: bold; 
         background-color:#AA336A;  
-        border-radius: 100px;
+        border-radius: 200px;
+        border-style:ridge ;
+        border-color: #fbe4ed;
+    }
+
+    #buybutton{
+        font-weight: bold; 
+        padding: 5px 5px;
+        font-size: 15px; 
+        background-color:#AA336A;  
+        border-radius: 20px;
         border-style:ridge ;
         border-color: #fbe4ed;
     }
