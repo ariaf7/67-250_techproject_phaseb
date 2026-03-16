@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../static/script.js" defer></script>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
     <title>MonoMuse</title>
 
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo"> 
         <nav>
@@ -38,7 +39,7 @@
         </form>
     </div>
     <footer>
-        &copy 2026 MonoMuse. All rights reserved
+        &copy <p id="copyYear"></p> MonoMuse. All rights reserved
     </footer>
     
 </body>

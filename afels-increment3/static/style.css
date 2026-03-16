@@ -99,7 +99,10 @@
         border-style:ridge ;
         border-color: #fbe4ed;
     }
-    
+
+    #copyYear{
+      color: rgba(32,99,155,.72);
+    }
     footer {
         border-top: 1px solid rgba(32,99,155,.12);
         padding: 18px 16px;
