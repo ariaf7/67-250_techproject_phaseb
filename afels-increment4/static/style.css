@@ -1,0 +1,127 @@
+* {
+    
+    color:  #030336;
+    font-family: Roboto Serif, Comfortaa, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+
+  }
+
+  body {
+    margin: 100px;
+    padding: 0;
+    background: #fbe4ed;
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+
+    #logo {
+        margin-top: 0px;
+        width: 30%;
+        display: block;
+    }
+
+    #exploreImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+      }
+
+    #codeImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+    }  
+
+    #algoImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    #h3 {
+        display: block;
+        margin: auto;
+    }  
+
+  nav a {
+    text-decoration: none;
+    color: #20639b;
+    font-weight: 400;
+    font-family: Comfortaa;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+  
+  nav a:hover {
+    border-color: #AA336A;
+    }
+
+    #navselected {
+        color:#AA336A;    
+        }
+    #cta {
+        font-weight: bold; 
+    }  
+
+    #submit{
+        font-weight: bold; 
+        background-color:#AA336A;  
+        border-radius: 200px;
+        border-style:ridge ;
+        border-color: #fbe4ed;
+    }
+
+    #buybutton{
+        font-weight: bold; 
+        padding: 5px 5px;
+        font-size: 15px; 
+        background-color:#AA336A;  
+        border-radius: 20px;
+        border-style:ridge ;
+        border-color: #fbe4ed;
+    }
+
+    #copyYear{
+      color: rgba(32,99,155,.72);
+    }
+    footer {
+        border-top: 1px solid rgba(32,99,155,.12);
+        padding: 18px 16px;
+        text-align: center;
+        color: rgba(32,99,155,.72);
+      }
+
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: fit-content;
+        }
+        
+        tr:nth-child(even) {
+        background-color: #feeef8;
+        }
+          
+      
+      
+  
+  
