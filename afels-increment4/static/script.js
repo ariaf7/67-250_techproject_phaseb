@@ -95,3 +95,13 @@ $("#readMore").click(function(){
   $("#readLess").show();   // Show the "Read Less" button
   $("#readMore").hide();   // Hide the "Read More" button  
 });
+
+$(".buyNowBtn").click(function(){ 
+  $("#checkout").show();  // Show the checkout form
+
+});
+
+$("#submit").click(function(){ 
+  alert("Redirecting to payment system.")
+
+});
