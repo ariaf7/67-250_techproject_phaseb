@@ -17,16 +17,17 @@
 
 </head>
 <body onload="addYear()">
-    <header>
-        <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo"> 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="explore.html">Explore</a>
-            <a href="exhibitions.html">Exhibitions</a>
-            <a href="tickets.html">Buy Tickets</a>
-            <a id="navselected" href="checkout.html">Checkout</a>
-        </nav>
-    </header>
+    <div class="container"> 
+    <header class = "header">
+        <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo"> </header>
+    <nav class ="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+    
     <div class ="main">
         <form>
             <label for="name">Name (required):</label><br>
@@ -38,9 +39,9 @@
             <input type="submit" id="submit" value="Submit"><br>
         </form>
     </div>
-    <footer>
+    <footer class="footer">
         &copy <p id="copyYear"></p> MonoMuse. All rights reserved
     </footer>
-    
+    </div>
 </body>
 </html>

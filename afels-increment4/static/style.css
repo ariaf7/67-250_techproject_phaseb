@@ -75,7 +75,7 @@
     border-color: #AA336A;
     }
 
-    #navselected {
+   .active  {
         color:#AA336A;    
         }
     #cta {
@@ -120,6 +120,58 @@
         tr:nth-child(even) {
         background-color: #feeef8;
         }
+
+
+        .container {
+          display: grid; /* Turns this div into a CSS Grid layout */
+          grid-template-areas:   /* Defines the layout structure */
+            'header header'
+            'nav_bar nav_bar'
+            'main main-img'
+            'footer footer';
+        }
+        
+        /* Places each element into the correct area of the grid */
+        .header {
+           grid-area: header; 
+        }
+        .nav_bar {
+          grid-area: nav_bar;
+          display: flex; /* Uses Flexbox for internal layout */
+          justify-content: right;   /* Right aligns the content */
+       }
+       
+        .main {
+          grid-area: main; 
+        }
+        .main_img {
+           grid-area: main-img; 
+        }
+        .footer {
+           grid-area: footer;
+        }
+        
+        #longIntro {
+          display: none;
+      }
+      
+      /* Hide Read Less button by default */
+      #readLess {
+          display: none;
+      }
+
+#readMore button,
+#readLess button {
+    margin-top: 8px;
+    padding: 5px 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #AA336A;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
           
       
       

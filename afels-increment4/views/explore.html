@@ -18,18 +18,18 @@
 
 </head>
 <body onload="addYear()">
-    <header>
-        <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo"> 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a id="navselected" href="explore.html">Explore</a>
-            <a href="exhibitions.html">Exhibitions</a>
-            <a href="tickets.html">Buy Tickets</a>
-            <a href="checkout.html">Checkout</a>
-        </nav>
-    </header>
+    <div class="container"> 
+    <header class = "header">
+        <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo"> </header>
+    <nav class = "nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+    
     <div class ="main">
-        <img id="exploreImg" src="../static/exploreImg.png" alt="MonoMuse glass structure" width="500" height="300">
         <h3>
             Mission Statement
         </h3>
@@ -57,9 +57,13 @@
             <li> 2005: MonoMuse opens, with baby Arianne cutting the ribbon.</li>
         </ul>
     </div>
-    <footer>
+
+    <figure class = "main_figure">
+        <img id="exploreImg" src="../static/exploreImg.png" alt="MonoMuse glass structure" width="500" height="300">
+    </figure>
+    <footer class = "footer">
         &copy <p id="copyYear"></p> MonoMuse. All rights reserved
     </footer>
-    
+    </div>
 </body>
 </html>

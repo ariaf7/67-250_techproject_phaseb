@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +18,17 @@
 
 </head>
 <body onload="addYear()">
-    <header>
-        <img id="logo" src="./static/logo.png" alt="MonoMuse Museum Logo"> 
-        <nav>
-            <a id="navselected" href="index.html">Home</a>
-            <a href="views/explore.html">Explore</a>
-            <a href="views/exhibitions.html">Exhibitions</a>
-            <a href="views/tickets.html">Buy Tickets</a>
-            <a href="views/checkout.html">Checkout</a>
-        </nav>
-    </header>
+    <div class="container"> 
+    <header class="header">
+        <img id="logo" src="./static/logo.png" alt="MonoMuse Museum Logo"> </header>
+    <nav class="nav_bar">
+        <a href="index.html">Home</a>
+        <a href="views/explore.html">Explore</a>
+        <a href="views/exhibitions.html">Exhibitions</a>
+        <a href="views/tickets.html">Buy Tickets</a>
+        <a href="views/checkout.html">Checkout</a>
+    </nav>
+
     <div class ="main">
         <h2>
             <span id="greeting"></span>! Welcome to the MonoMuse Museum
@@ -38,10 +40,30 @@
         <a id = "buybutton" href="views/tickets.html" class="button">
             Buy Tickets
         </a>
+
+        <p id="shortIntro">
+            MonoMuse features interactive exhibits and digital art experiences that highlight the future of creativity.
+        </p>
+    
+        <!-- Long paragraph (hidden by default) -->
+        <p id="longIntro">
+            Visitors can explore installations that blend art, science, and technology while learning about how artists and innovators collaborate to create new forms of expression. Our rotating exhibitions ensure that every visit offers something new and inspiring.
+        </p>
+    
+        <!-- Read More button (visible by default) -->
+        <span id="readMore">
+            <button id="readMoreBtn">Read More</button>
+        </span>
+    
+        <!-- Read Less button (hidden by default) -->
+        <span id="readLess">
+            <button id="readLessBtn">Read Less</button>
+        </span>
+    
     </div>
-    <footer>
+    <footer class = "footer">
         &copy <p id="copyYear"></p> MonoMuse. All rights reserved
     </footer>
-    
+    </div>
 </body>
 </html>
