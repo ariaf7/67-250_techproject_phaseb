@@ -85,9 +85,13 @@ $(".buyNowBtn").click(function(){
 
 });
 
-$("#submit").click(function(){ 
-  alert("Redirecting to payment system.")
+$("#checkout").submit(function(e) {
+  if (!this.checkValidity()) {
+    // Let browser show validation messages
+    return;
+  }
 
+  alert("Redirecting to payment system.");
 });
 
 
