@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../static/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+
+</head>
+<body onload="addYear()">
+  <div class="container"> 
+    <header class="header">
+      <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo"> </header>
+    <nav class ="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+    </nav>
+
+    <div class ="main">
+        <table>
+            <tr>
+              <th>Ticket Type</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Adult</td>
+              <td>General admission for ages 18 and over. Under 18 free of charge</td>
+              <td>$18</td>
+            </tr>
+            <tr>
+              <td>Student</td>
+              <td>Student ID required</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>Member ID required</td>
+                <td>$15</td>
+              </tr>
+          </table>
+
+            <form id = "checkout">
+                <label for="name">Name (required):</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email (required):</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+                <label for="date">Date (required):</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="ticket">Ticket Quantity (required):</label><br>
+                <input type="number" id="ticket" name="ticket" min="1" required><br><br>
+                <input type="submit" id="submit" value="Submit"><br>
+            </form>
+    </div>
+    <figure class = "main_figure">
+      <table id="calendar" cellspacing="10" cellpadding="10">
+        <thead>
+            <tr>
+                <!-- Here we have applied inline style 
+                     to make it more attractive-->
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1<br>
+                  <span class="buyNow">
+                    <button type="button" class="buyNowBtn">Buy Now</button>
+                  </span></td>
+                <td>2<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>11</td>
+                <td>12<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>13</td>
+                <td>14</td>
+                <td>15<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>16<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>28<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>29</td>
+                <td>30<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+            </tr>
+            <tr>
+                <td>31<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>1</td>
+                <td>2<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>3</td>
+                <td>4<br><span class="buyNow">
+                  <button type="button" class="buyNowBtn">Buy Now</button>
+                </span></td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+  </figure>
+
+    <footer class = "footer">
+        &copy <p id="copyYear"></p> MonoMuse. All rights reserved
+    </footer>
+    </div>
+</body>
+</html>
