@@ -1,47 +1,7 @@
-// var x = 5;
-// var y = 7;
-
-// var z = x + y;
-// console.log(z);
-
-// var A = "Hello ";
-// var B = "world!";
-
-// var C = A + B;
-// console.log(C);
-
-// function sumnPrint(x1,x2){
-//     console.log(x1+x2);
-// }
-// sumnPrint(x,y)
-// sumnPrint(A,B)
-
-// if (C.length > z) {
-//     console.log(C);
-//   } else if (C.length < z) {
-//     console.log(z);
-//   } else {
-//     console.log("good job!");
-//   }
-
-// L1 = ["Watermelon","Pineapple","Pear","Banana"];
-// L2 = ["Apple","Banana","Kiwi","Orange"];
-
-// function findTheBanana(L){
-//     var found = false; 
-//     for (i = 0; i < L.length; i++)
-//     {
-//         if (L[i] = "Banana"){
-//             found = true;
-//         }
-//     }
-//     alert("We found the banana");
-// }
-// findTheBanana(L1)
-// findTheBanana(L2)
 var now = new Date();
 var hour = now.getHours();
 var year = now.getFullYear();
+//Greets user when they open website
 function greeting(h) {
     var element = document.getElementById("greeting");
     if (element) {
@@ -58,13 +18,14 @@ function greeting(h) {
   }
 greeting(hour);  
 
+// Dynamically changes copy right
 function addYear(){
     var element = document.getElementById("copyYear");
     element.innerHTML = year;
 }
 addYear();
 
-/* Sets the 'active' class on the navigation link that matches the current page URL.*/
+//Sets the 'active' class on the navigation link that matches the current page URL.
 
 function ActiveNav() {
   const navLinks = document.querySelectorAll('nav a');
@@ -75,7 +36,11 @@ function ActiveNav() {
       }
   });
 }
-
+//Toggles menu for mobile app
+function toggleMenu() {
+  const nav = document.querySelector(".nav_bar");
+  nav.classList.toggle("responsive");
+}
 
 // Execute the function to set the active navigation link on page load
 ActiveNav();
@@ -105,3 +70,5 @@ $("#submit").click(function(){
   alert("Redirecting to payment system.")
 
 });
+
+
