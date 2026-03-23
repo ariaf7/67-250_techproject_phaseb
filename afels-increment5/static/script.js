@@ -45,6 +45,25 @@ function toggleMenu() {
 // Execute the function to set the active navigation link on page load
 ActiveNav();
 
+// Map script
+
+const mapElement = document.getElementById("map");
+
+if (mapElement) {
+  var map = L.map('map').setView([49.4918, -117.2948], 13);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  L.marker([49.4886, -117.2810])
+    .addTo(map)
+    .bindPopup("MonoMuse Museum, Nelson, BC")
+    .openPopup();
+}
+
+
 
 // When the "Read Less" button is clicked
 $("#readLess").click(function(){ 

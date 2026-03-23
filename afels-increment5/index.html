@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="./static/script.js" defer></script>
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <!-- Leaflet  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <!-- My stylesheet and script -->
     <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js" defer></script>
+     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Your name">
-
     <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
     <meta name="description" content="MonoMuse website redesign project">
     <title>MonoMuse</title>
@@ -44,16 +54,21 @@
         <p id="shortIntro">
             MonoMuse features interactive exhibits and digital art experiences that highlight the future of creativity.
         </p>
-    
+        <!-- Read More button (visible by default) -->
+        <iframe id = "video" src="https://www.youtube.com/embed/j8bXKzkq0Tk?si=xX2cQsBs7A6hWNMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <span id="readMore">
+            <button id="readMoreBtn">Read More</button>
+        </span>
+        <p>
+            How to get here 
+        </p>
+        <div id="map"></div>
         <!-- Long paragraph (hidden by default) -->
         <p id="longIntro">
             Visitors can explore installations that blend art, science, and technology while learning about how artists and innovators collaborate to create new forms of expression. Our rotating exhibitions ensure that every visit offers something new and inspiring.
         </p>
     
-        <!-- Read More button (visible by default) -->
-        <span id="readMore">
-            <button id="readMoreBtn">Read More</button>
-        </span>
     
         <!-- Read Less button (hidden by default) -->
         <span id="readLess">
