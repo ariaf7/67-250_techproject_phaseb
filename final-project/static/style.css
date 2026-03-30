@@ -1,0 +1,322 @@
+
+
+* {
+    
+    color:  #030336;
+    font-family: Roboto Serif, Comfortaa, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+
+  }
+
+  body {
+    margin: 100px;
+    padding: 0;
+    background: #fbe4ed;
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+
+    #logo {
+        margin-top: 0px;
+        width: 30%;
+        display: block;
+    }
+
+    #exploreImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+      }
+
+    #codeImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+    }  
+
+    #algoImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    #h3 {
+        display: block;
+        margin: auto;
+    }  
+
+  nav a {
+    text-decoration: none;
+    color: #20639b;
+    font-weight: 400;
+    font-family: Comfortaa;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+  
+  nav a:hover {
+    border-color: #AA336A;
+    }
+
+   .active  {
+        color:#AA336A;    
+        }
+    #cta {
+        font-weight: bold; 
+    }  
+
+    #submit{
+        font-weight: bold; 
+        background-color:#AA336A;  
+        border-radius: 200px;
+        border-style:ridge ;
+        border-color: #fbe4ed;
+    }
+
+    #buybutton{
+        font-weight: bold; 
+        padding: 5px 5px;
+        font-size: 15px; 
+        background-color:#AA336A;  
+        border-radius: 20px;
+        border-style:ridge ;
+        border-color: #fbe4ed;
+    }
+
+    #copyYear{
+      color: rgba(32,99,155,.72);
+    }
+    footer {
+        border-top: 1px solid rgba(32,99,155,.12);
+        padding: 18px 16px;
+        text-align: center;
+        color: rgba(32,99,155,.72);
+      }
+
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: fit-content;
+        }
+        
+        tr:nth-child(even) {
+        background-color: #feeef8;
+        }
+
+
+        .container {
+          display: grid; /* Turns this div into a CSS Grid layout */
+          grid-template-areas:   /* Defines the layout structure */
+            'header header'
+            'nav_bar nav_bar'
+            'main main-img'
+            'footer footer';
+        }
+
+        #calendar {
+          text-align: center;
+           vertical-align: top;
+          border:2px solid #AA336A;
+        }
+        
+        /* Places each element into the correct area of the grid */
+        .header {
+           grid-area: header; 
+        }
+
+       .nav_bar {
+        grid-area: nav_bar;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+      
+      /* Hide hamburger by default */
+      .nav_bar .icon {
+        display: none;
+      }
+       
+        .main {
+          grid-area: main; 
+        }
+        .main_img {
+           grid-area: main-img; 
+        }
+        .footer {
+           grid-area: footer;
+        }
+        
+        #longIntro {
+          display: none;
+      }
+      
+      /* Hide Read Less button by default */
+      #readLess {
+          display: none;
+      }
+
+#readMore button,
+#readLess button {
+    margin-top: 8px;
+    padding: 5px 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #AA336A;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buyNowBtn {
+    font-size: 7px;
+    border: none;
+    background-color: #AA336A;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 5px;
+}
+
+.buyNowBtn:hover{
+  background-color: #fba0cb;
+}
+
+#checkout {
+  display: none;
+}
+
+#confirmation {
+  /* display: none; */
+}
+
+#video {
+  width: 400px;
+  height: 255px;
+}
+
+#map {
+  height: 300px;
+  width: 75%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* FROM SLIDES */
+@media only screen and (max-width: 650px) {
+
+  body {
+    margin: 20px;
+  }
+  /* reorganize container */
+  .container {
+    grid-template-areas:
+      'header'
+      'nav_bar'
+      'main'
+      'main-img'
+      'footer';
+  }
+
+  /* Shrink images and margins and font sizes */
+  #exploreImg,
+  #codeImg,
+  #algoImg {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #buybutton,
+  #submit,
+  .buyNowBtn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Hide all navigation links except the hamburger icon on small screens */
+  .nav_bar a:not(.icon) {
+    display: none;
+  }
+
+  /* Show and style the hamburger icon */
+  .nav_bar .icon {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  /* When menu is toggled, stack items vertically */
+  .nav_bar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Show all navigation links when menu is expanded */
+  .nav_bar.responsive a:not(.icon) {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Keep hamburger icon aligned to the right in expanded view */
+  .nav_bar.responsive .icon {
+    display: block;
+    align-self: flex-end;
+  }
+
+  #calendar {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+    border: 2px solid #AA336A;
+  }
+
+  /* Shrink the calendar table  */
+  #calendar table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+  }
+  
+  #calendar th,
+  #calendar td {
+    padding: 6px;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+}
+
+          
+      
+      
+  
+  
