@@ -125,11 +125,13 @@
 
 
         .container {
-          display: grid; /* Turns this div into a CSS Grid layout */
-          grid-template-areas:   /* Defines the layout structure */
+          display: grid;
+          grid-template-areas:
             'header header'
             'nav_bar nav_bar'
-            'main main-img'
+            'main main_figure'
+            'slideshow slideshow'
+            'dots dots'
             'footer footer';
         }
 
@@ -204,7 +206,7 @@
 }
 
 #confirmation {
-  /* display: none; */
+  display: none;
 }
 
 #video {
@@ -219,6 +221,120 @@
   border-radius: 10px;
 }
 
+/* THIS IS FROM  https://www.w3schools.com/howto/howto_js_slideshow.asp */
+* {box-sizing:border-box}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.main {
+  grid-area: main;
+}
+
+.main_figure {
+  grid-area: main_figure;
+}
+
+.slideshow-container {
+  grid-area: slideshow;
+  width: 75%;
+  max-width: 1000px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.slideshow-dots {
+  grid-area: dots;
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;
+  gap: 10px;                /* spacing between dots */
+  margin-top: 10px;
+}
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
 /* FROM SLIDES */
 @media only screen and (max-width: 650px) {
 
@@ -231,7 +347,9 @@
       'header'
       'nav_bar'
       'main'
-      'main-img'
+      'main_figure'
+      'slideshow'
+      'dots'
       'footer';
   }
 
@@ -314,6 +432,10 @@
   }
 
 }
+
+
+
+
 
           
       
